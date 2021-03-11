@@ -1,7 +1,7 @@
 package richcoder.huobi.quantex.service;
 
 import org.springframework.stereotype.Service;
-import richcoder.huobi.quantex.api.MarketApi;
+import richcoder.huobi.api.api.MarketApi;
 
 import javax.annotation.Resource;
 
@@ -17,7 +17,6 @@ public class MarketService {
     /**
      * 获取行情 日线行情 ，4小时行情，15分钟行情
      */
-
 
 
 }
