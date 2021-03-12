@@ -18,7 +18,6 @@ richcoder_huobi_data：火币数据抓取落库 如行情
 
 richcoder_huobi_quantex：量化代码，自定义自己的量化逻辑
 
-richcoder_jpa_tool：附赠的jpa代码自动生成工具（业务无关）
 
 安装postsql
 
