@@ -1,5 +1,6 @@
 package richcoder.huobi.api.rpc;
 
+import com.sun.istack.internal.NotNull;
 import okhttp3.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import richcoder.huobi.api.common.SdkException;
 
-import javax.validation.constraints.NotNull;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
