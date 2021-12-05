@@ -16,6 +16,7 @@
     <module>richcoder_ftx_api</module>
     <module>richcoder-huobi-main</module>
     <module>richcoder-kucoin_api</module>
+    <module>richcoder-deribit-api</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>

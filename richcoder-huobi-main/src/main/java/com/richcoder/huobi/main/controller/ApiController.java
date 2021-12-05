@@ -1,6 +1,7 @@
 package com.richcoder.huobi.main.controller;
 
 import com.richcoder.api.bybit.BybitRestService;
+import com.richcoder.api.deribit.DeribitRestService;
 import com.richcoder.api.ftx.FtxService;
 import com.richcoder.api.kucoin.KuCoinsRestService;
 import javax.annotation.Resource;
@@ -8,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import sun.security.util.DerInputStream;
 
 /**
  * 模板服务
@@ -25,6 +27,8 @@ public class ApiController {
   private FtxService ftxservice;
   @Resource
   private KuCoinsRestService kucoinService;
+  @Resource
+  private DeribitRestService deribitRestService;
 
   @GetMapping("/bybit/swap")
   public String byBitSwap() {
@@ -49,6 +53,10 @@ public class ApiController {
   @GetMapping("/kucoin/asset")
   public String kucoinAsset() {
     return kucoinService.queryAssert();
+  }
+  @GetMapping("/deribit/auth")
+  public String deribitAuth() {
+    return deribitRestService.auth();
   }
 
 
